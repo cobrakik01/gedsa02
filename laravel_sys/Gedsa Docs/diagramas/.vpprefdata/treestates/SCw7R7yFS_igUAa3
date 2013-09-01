@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProjectTreeState projectID=".mONR7yFS_igUAAF" projectPath="C:\wamp\www\gedsa\Gedsa Docs\diagramas\Casos de Uso\Administracion de Albumes.vpp">
+	<TreeState name="ModelRepository" viewX="0" viewY="0">
+		<ExpandedPath>ModelRepository</ExpandedPath>
+	</TreeState>
+	<TreeState name="DiagramNavigator" viewX="0" viewY="0">
+		<ExpandedPath>DiagramNavigator</ExpandedPath>
+		<SelectedPath>DiagramNavigator,Database Modeling</SelectedPath>
+	</TreeState>
+	<TreeState name="ClassBrowser" viewX="0" viewY="0">
+		<ExpandedPath>ClassBrowser</ExpandedPath>
+		<ExpandedPath>ClassBrowser,ClassBrowser</ExpandedPath>
+	</TreeState>
+	<TreeState name="LogicalView" viewX="0" viewY="0"/>
+</ProjectTreeState>

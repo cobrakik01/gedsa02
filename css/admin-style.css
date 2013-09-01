@@ -1,0 +1,389 @@
+/* 
+    Document   : admin-style
+    Created on : 9/06/2013, 04:02:43 PM
+    Author     : cobrakik
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+html body {
+    margin: 0px;
+    background-color: #f9f9f9;
+    font-family: Geneva, sans-serif;
+    font-stretch: extra-condensed;
+    color: #707070;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: lighter; 
+    font-stretch: extra-condensed; 
+    border-bottom: solid 1px #dadada;
+}
+
+a:link, a:visited {
+    color: #5d9cd8;    
+    text-decoration: none;
+}
+
+a:hover {
+    color: #62a5e5;
+    text-decoration: underline;
+}
+
+textarea {
+    overflow: auto;
+}
+
+input[type="text"], input[type="tel"], input[type="email"], input[type="password"], textarea {
+    padding: 5px;
+    border-radius: 3px;
+    border: #dddddd solid 1px;
+    width: 95%;
+}
+
+input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus, textarea:focus {
+    border: #ccccff solid 1px;
+    box-shadow: #ccccff 0px 0px 7px -3px;
+}
+
+/**
+ * *********************************************************
+ *                  Botones
+ * *********************************************************
+ */
+
+a:link.btn, a:visited.btn, input[type="button"], input[type="submit"], button {
+    padding: 10px;
+    border: solid 1px #c3c3c3;
+    border-radius: 4px;
+    background-color: #eaeaea;
+    box-shadow: #ccccff 0px 0px 10px -4px;
+    display: block;
+}
+
+a.btn:hover, input[type="button"]:hover, input[type="submit"]:hover, button:hover {
+    box-shadow: #ccccff 0px 1px 10px -2px;
+    background-color: #efefef;
+    text-decoration: none;
+}
+
+/**
+ * *********************************************************
+ *                  Mensajes
+ * *********************************************************
+ */
+.message {
+    font-size: 15px;
+    text-align: center; 
+    padding: 20px; 
+    border: solid 1px #cccccc; 
+    border-radius: 3px; 
+    box-shadow: #ccccff 1px 1px 10px 1px;
+}
+
+.title-message {
+    font-size: 24px;
+    padding: 5px;
+}
+
+.subtitle-message {
+    font-size: 18px;
+}
+
+.warning {
+    text-align: center;
+    background-color: #ffff99; 
+    padding: 10px; 
+    border: solid 3px #eff756; 
+    border-radius: 3px;
+}
+
+/**
+ * *********************************************************
+ *                  Logo
+ * *********************************************************
+ */
+#logo {
+    background-color: #333333;
+    background-image: url(../img/sys_admin/logo_system.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    color: #fcfcfc;
+    font-size: 2em;
+}
+/**
+ * *********************************************************
+ *                  Menu Horizontal
+ * *********************************************************
+ */
+.menu {
+    /*background-color: #1c1c1c;*/
+    background-image: url(../img/sys_admin/bar.png);
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0px;
+    list-style: none;
+    overflow: hidden;
+}
+
+.menu ul li {
+    float: left;
+}
+
+.menu ul li a:link, .menu ul li a:visited {
+    color: #f9f9f9;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    border-right: solid 1px #68655f;
+    border-bottom: solid 2px #fbaf18;
+}
+
+.menu ul li a:hover, ul li a.linkActive {
+    /*background-color: #eaa316;*/
+    background-image: url(../img/sys_admin/button.png);
+    border-bottom: solid 2px #ba8211;
+    color: #ffffff;
+}
+
+.menu ul li a:active {
+    background-color: #0c0c0c;
+}
+
+/**
+ * *********************************************************
+ *                  Menú Vertical
+ * *********************************************************
+ */
+.v-menu {
+    float: left;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    border: solid 1px #dadada;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    width: 16%;
+    font-size: 13px;
+}
+
+.v-menu li a:link, .v-menu li a:visited {
+    display: block;
+    padding: 5px;
+    border-bottom: solid 1px transparent;
+}
+
+.v-menu li a:hover {
+    background-color: #f7f7f7;
+    text-decoration: none;
+    border-bottom: solid 1px #e2e2e2;
+}
+
+/**
+ * *********************************************************
+ *                  Wraper
+ * *********************************************************
+ */
+.wraper {
+    margin: 0 auto;
+    width: 900px;
+}
+
+/**
+ * *********************************************************
+ *                  Container
+ * *********************************************************
+ */
+#container {
+    background-color: #fcfcfc;
+    border-left: solid 1px #e5e5e5;
+    border-right: solid 1px #e5e5e5;
+    border-bottom: solid 1px #e5e5e5;
+    padding: 20px;
+    min-height: 100px;
+    margin-bottom: 20px;
+}
+
+/**
+ * *********************************************************
+ *                  Footer
+ * *********************************************************
+ */
+#footer {
+    border-top: solid 1px #e1e1e1;
+    padding-top: 20px;
+    font-size: 12px;
+    text-align: center;
+    font-stretch: ultra-expanded;
+    margin-bottom: 100px;
+}
+
+/**
+ * *********************************************************
+ *                  Tabla de Resultados
+ * *********************************************************
+ */
+.tresult {
+    border-collapse: collapse;
+}
+.tresult tr th {
+    padding: 10px;
+    border: solid 1px #cccccc;
+    background-color: #efefef;
+}
+
+.tresult tr td {
+    border-left: solid 1px #f2f2f2;
+    border-right: solid 1px #f2f2f2;
+    padding: 5px;
+    font-size: 13px;
+}
+
+.tresult tr {
+    border: solid 1px #cfcfcf;
+}
+
+.tresult tr:hover {
+    border: solid 1px #80cfe9;
+    background-color: #eaf7fb;
+}
+
+/**
+ * *********************************************************
+ *                  Paginado
+ * *********************************************************
+ */
+.pagination ul {
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+}
+
+.pagination ul li {
+    float: left;
+}
+
+.pagination ul li a:link, .pagination ul li a:visited {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: #88abfc;
+}
+
+.pagination ul li a[href="#"]:link {
+    color: #999999;
+}
+
+/**
+ * *********************************************************
+ *                  Marco de Fotos
+ * *********************************************************
+ */
+.wraper-photo {
+    padding: 5px;
+    border: solid 1px #cccccc; 
+    border-radius: 3px; 
+    box-shadow: #ccccff 1px 1px 10px 1px;
+}
+
+.wraper-photo ul {
+    overflow: hidden;
+    margin: 0;
+    padding: 0px;
+    list-style: none;
+}
+
+.wraper-photo ul li {
+    float: left;
+    padding: 3px;
+}
+
+/**
+ * *********************************************************
+ *                  Contenedor de la foto
+ * *********************************************************
+ */
+.container-photo {
+    cursor: pointer;
+    width: 203px;
+    height: 200px;
+    border: solid 1px #ffcccc;
+    background-color: #e2e2ff;
+}
+
+.container-photo img {
+    width: 100%;
+    height: 100%;
+}
+
+.controls-photo {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    /*background-color: #5c5c5c;*/
+    border-radius: 3px;
+    overflow: hidden;
+    width: 60px;
+    height: 30px;
+    position: relative;
+    top: -204px;
+    left: 143px;
+    z-index: 2;
+}
+
+.controls-photo li {
+    float: left;
+}
+
+.controls-photo li a {
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.controls-photo .btnEditControl {
+    background-image: url(../img/sys_admin/edit_normal_24px.png);
+}
+
+.controls-photo .btnEditControl:hover {
+    background-image: url(../img/sys_admin/edit_hover_24px.png);
+}
+
+.controls-photo .btnDeleteControl {
+    background-image: url(../img/sys_admin/delete_normal_24px.png);
+}
+.controls-photo .btnDeleteControl:hover {
+    background-image: url(../img/sys_admin/delete_hover_24px.png);
+}
+
+.container-photo .description-photo {
+    font-size: 15px;
+    padding: 5px;
+    color: #d8d8d8;
+    top: -120px;
+    height: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.container-photo .description-photo-bg {
+    top: -83px;
+    height: 40px;
+    background-color: #000000;
+    position: relative;
+    opacity: 0.3;
+    z-index: 0;
+}
+
+.container-photo:hover .description-photo {
+    color: #ffffff;
+}
+
+.container-photo:hover .description-photo-bg {
+    opacity: 0.7;
+}
+
+

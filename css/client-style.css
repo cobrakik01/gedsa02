@@ -1,0 +1,427 @@
+/* 
+    Document   : estilo3
+    Created on : 14/03/2013, 04:41:08 PM
+    Author     : Federico
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body {
+    margin: 0;
+    background-color: #333;
+    font-family: Geneva, sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: Geneva, sans-serif;
+    font-stretch: condensed;
+    font-weight: 500;
+    border-bottom: solid 1px #eaeaea;
+}
+
+h1:nth-child(2n+3), h2:nth-child(2n+3), h3:nth-child(2n+3), h4:nth-child(2n+3) {
+    text-align: right;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #3886e0;
+}
+
+a:hover {
+    color: #3886e0;
+    text-decoration: cancel-overline;
+}
+
+input[type="submit"], input[type="button"], button {
+    padding: 5px;
+    border: solid 1px #9384ad;
+    border-radius: 5px;
+    background-color: #baa7db;
+}
+
+input[type="submit"]:hover, input[type="button"]:hover, button:hover {
+    background-color: #c4b0e8;
+}
+
+input[type="submit"]:active, input[type="button"]:active, button:active {
+    background-color: #a291bf;
+}
+
+input[type="text"], input[type="tel"], input[type="email"] {
+    border-radius: 5px;
+    border: solid 1px #e8e8e8;
+    padding: 5px;
+}
+
+input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus {
+    border: solid 1px #d6c0fc;
+}
+
+.wrapper-s {
+    margin: 0 auto;
+    width: 1000px;
+    overflow: hidden;
+}
+
+#container {
+    border-top: #eaeaea solid 1px;
+    border-bottom: #727272 solid 3px;
+    border:  solid 1px #dddddd;
+}
+
+#content {
+    min-height: 300px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    float: left;
+    width: 750px;
+}
+
+/************************************************
+ *          ARTICULOS
+ ************************************************/
+.article {
+    border: solid 1px transparent;
+    background-image: url(../img/home/panel-gris.svg.png);
+    background-repeat: no-repeat;
+    padding: 10px;
+    margin: 15px;
+    overflow: hidden;
+    color: #6b6b6b;
+    font-stretch: condensed;
+}
+
+.article:hover {
+    background-image: url(../img/home/panel-gris-hover.png);
+    color: #3d3d3d;
+    cursor: pointer;
+}
+
+.article div {
+    width: 466px;
+    min-height: 80px;
+    float: left;
+    padding: 10px;
+}
+
+.article img {
+    float: left;
+    border: #D5D5D5 solid 1px;
+    padding: 5px;
+    background-color: #FFF;
+}
+
+/************************************************
+ *          HEADER
+ ************************************************/
+
+.font-header {
+    background-image: url(../img/fondo-cabecera.png);
+}
+
+.header {
+    background-color: #ffffff;
+    background-image: url(../img/fondo-cabecera.png);
+    min-height: 160px;
+}
+
+#container-logo {
+    float: left;
+    overflow: hidden;
+}
+
+#container-logo img {
+    float: left;
+}
+
+#container-logo div {
+    float: left;
+}
+
+#container-slogan {
+    float: left;
+    margin-left: 100px;
+    margin-top: 105px;
+    font-size: 40px;
+    letter-spacing: -3px;
+    color: #606060
+}
+
+/************************************************
+ *          SLIDER
+ ************************************************/
+
+#container-slider {
+    border-bottom: #EAEAEA solid 1px; 
+    padding-bottom: 20px;
+}
+
+.content-slider {
+    margin: 10px auto 0px auto;
+    height: 400px;
+    padding: 5px 5px 5px 5px;
+    background-image: url(../img/home/background-slider.png);
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.content-slider div {
+    overflow: hidden;
+}
+
+.content-slider div img, .content-slider div div {
+    float: left;
+}
+
+.content-slider div div {
+    padding: 10px; 
+    text-align: center;
+}
+
+.slider {
+    font-stretch: condensed;
+}
+
+.slider img {
+    padding: 10px;
+    width: 500px;
+    height: 380px;
+}
+
+.bg-description-slider {
+    background-image: url(../img/home/panel-descripcion-img-slider.png); 
+    width: 448px; 
+    height: 366px;
+    margin-top: 5px;
+    margin-left: 0px;
+    color: white;
+}
+
+
+/************************************************
+ *          NAV
+ ************************************************/
+.nav {
+    border-top: #262626 solid 3px;
+    border-bottom: #EFD0AD solid 5px;
+}
+
+.nav div ul {
+    overflow: hidden;
+    margin: 0;
+    list-style: none;
+}
+
+.nav div ul li {
+    float: left;
+}
+
+.nav div ul li a:link, .nav div ul li a:visited {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: #e5e5e5;
+    border-left: #424242 solid 1px;
+    /*border-right: #424242 solid 1px;*/
+}
+
+.nav div ul li a:hover {
+    color: #ffffff;
+    background-color: #444444;
+}
+
+.nav div ul li a:active {
+    background-color: #1e1e1e;
+}
+
+/************************************************
+ *          CONTENIDO DEL CUERPO DE PAGINA(ARTICULOS, EXTRAS ETC...)
+ ************************************************/
+
+#container-body {
+    background-color: #ffffff;
+}
+
+/************************************************
+ *          ASIDE
+ ************************************************/
+.aside {
+    width: 230px;
+    margin-left: 18px;
+    margin-top: 50px;
+    float: left;
+}
+
+.banner {
+    border: #F3F3F3 solid 1px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.banner h3 {
+    text-align: center;
+    margin: 0px 0px 10px 0px;
+    padding: 5px;
+    font-weight: lighter;
+    border-bottom: solid 1px #F3F3F3;
+    font-size: 14px;
+    background-color: #e5e2af;
+}
+
+/************************************************
+ *          FOTTER
+ ************************************************/
+#footer {
+    min-height: 200px;
+    background-image: url(../img/home/footer.png);
+    background-repeat: repeat-x;
+}
+
+#footer #footer-content {
+    margin-top: 5px;
+    /*border-top: 4px solid #7a7a7a;*/
+    padding-top: 20px;
+    color: #cecece;
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 5px;
+    font-stretch: condensed;
+}
+
+/************************************************
+ *          MENU VERTICAL
+ ************************************************/
+.vmenu {
+    margin: 0px 0px 0px -40px;
+}
+
+.vmenu li {
+    list-style: none;
+}
+
+.vmenu li a:link, .vmenu li a:visited {
+    display: block;
+    padding: 5px;
+    margin: 0px 10px 0px 10px;
+    text-decoration: none;
+    border-bottom: solid 1px #F3F3F3;
+    color: #6fcbe2;
+}
+
+.vmenu li a:hover {
+    background-color: #f9f9f9;
+}
+
+/*
+ *******************************************************************************
+ *
+ *                  Seccion denuestros trabajos
+ *
+ *******************************************************************************
+ */
+.limites-album {
+    background-color: #f9f9f9; 
+    border: solid 1px #e8e8e8;
+    padding: 3px; 
+    margin-bottom: 20px;
+}
+
+.limites-album:hover {
+    border: solid 1px #d8d8d8;
+}
+
+.marco-album {
+    border: solid 1px #ededed;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.cont-foto {
+    float: left;
+    padding: 5px;
+    width: 222px;
+    height: 150px;
+    cursor: pointer;
+    margin: 3px 3px 0px 3px;
+    border: solid 1px #ededed;
+    background-color: #f4f4f4;
+}
+
+.cont-foto:hover {
+    border: solid 1px #c4c4c4;
+}
+
+.desc-foto {
+    background-color: #ffffff;
+    font-size: 13px;
+    opacity: 0.7;
+    position: relative;
+    width: 216px;
+    height: 40px;
+    top: -60px;
+    padding: 3px;
+}
+
+
+/**
+ * *********************************************************
+ *                  Paginado
+ * *********************************************************
+ */
+.pagination ul {
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+}
+
+.pagination ul li {
+    float: left;
+}
+
+.pagination ul li a:link, .pagination ul li a:visited {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: #88abfc;
+}
+
+.pagination ul li a[href="#"]:link {
+    color: #999999;
+}
+
+/**
+ * *********************************************************
+ *                  Image Viewer
+ * *********************************************************
+ */
+.iv-slide {
+    height: 75px;
+    border-bottom: solid 2px #ad9838;
+    overflow: auto;
+    text-align: center;
+}
+/*
+.iv-slide img:hover {
+    background-color: #ccd8ef;
+}
+*/
+.iv-slide img, .imageViewer img {
+    padding: 2px;
+    background-color: #ffffff;
+    border: solid 1px #d1d1d1;
+    border-radius: 3px;
+    margin-right: 3px;
+}
+
+.imageViewer img {
+    box-shadow: 0px 0px 10px 1px #898989;
+}
+
+.imageViewer {
+    background-color: #f8f8f8;
+    border-top: solid 1px #636363;
+    text-align: center;
+    padding-top: 10px;
+}
