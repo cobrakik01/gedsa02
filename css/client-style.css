@@ -425,3 +425,12 @@ input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus {
     text-align: center;
     padding-top: 10px;
 }
+
+.message {
+    font-size: 15px;
+    text-align: center; 
+    padding: 20px; 
+    border: solid 1px #cccccc; 
+    border-radius: 3px; 
+    box-shadow: #ccccff 1px 1px 10px 1px;
+}

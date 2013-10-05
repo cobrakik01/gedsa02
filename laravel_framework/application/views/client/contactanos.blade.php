@@ -17,11 +17,11 @@
 <table align="center">
     <tr>
         <td>{{ Form::label('txtNombre', 'Nombre') }}</td>
-        <td>{{ Form::text('txtNombre') }}</td>
+        <td>{{ Form::text('txtNombre', '', array('required')) }}</td>
     </tr>
     <tr>
         <td>{{ Form::label('txtApp', 'Apellido Paterno') }}</td>
-        <td>{{ Form::text('txtApp') }}</td>
+        <td>{{ Form::text('txtApp', '', array('required')) }}</td>
     </tr>
     <tr>
         <td>{{ Form::label('txtApm', 'Apellido Materno') }}</td>
@@ -33,7 +33,7 @@
     </tr>
     <tr>
         <td>{{ Form::label('txtTelefono', 'Telefono') }}</td>
-        <td>{{ Form::telephone('txtTelefono') }}</td>
+        <td>{{ Form::telephone('txtTelefono', '', array('required')) }}</td>
     </tr>
     <tr>
         <td>{{ Form::label('txtEmail', 'Correo Electronico') }}</td>
@@ -46,9 +46,10 @@
     </tr>
     <tr>
         <td colspan="2" align="center">
-            {{ Form::textarea('txtDescripcionSolicitud') }}
+            {{ Form::textarea('txtDescripcionSolicitud', '', array('required')) }}
         </td>
     </tr>
+    <!--
     <tr>
         <td colspan="2">
             {{ Form::label('scbAcuerdo', 'Estoy de acuerdo con el acuerdo de privacidad', array('style'=>'font-size: 10px;')) }}
@@ -62,6 +63,7 @@
             {{HTML::link('#','Acuerdo de privacidad', array('style'=>'font-size: 10px;'))}}
         </td>
     </tr>
+    -->
     <tr>
         <td colspan="2" align="right">
             {{ Form::submit('Contactar') }}
@@ -69,4 +71,7 @@
     </tr>
 </table>
 {{ Form::close() }}
+@if($errors->first('errores'))
+<div class="message">{{$errors->first('errores')}}</div>
+@endif
 @endsection
