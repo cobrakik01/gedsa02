@@ -25,12 +25,24 @@ class Admin_Administradores_Controller extends Admin_Base_Controller {
             'nombre' => 'required',
             'app' => 'required',
             'direccion' => 'required',
-            'telefono' => 'required|integer',
+            'telefono' => 'required',
             'email' => 'email',
             'nikname' => 'required|min:3|unique:' . Administrador::$table . ',nombre',
             'password' => 'required|min:4|different:nombre|different:nikname|confirmed',
             'password_confirmation' => 'required'
         );
+        $validation = \Laravel\Validator::make(Input::all(), $rules);
+        if ($validation->fails()) {
+            return \Laravel\Redirect::back()->with_input()->with_errors($validation);
+        }
+
+        $rules = array('telefono' => 'min:8|max:15');
+        $validation = \Laravel\Validator::make(Input::all(), $rules);
+        if ($validation->fails()) {
+            return \Laravel\Redirect::back()->with_input()->with_errors($validation);
+        }
+
+        $rules = array('telefono' => 'numeric');
         $validation = \Laravel\Validator::make(Input::all(), $rules);
         if ($validation->fails()) {
             return \Laravel\Redirect::back()->with_input()->with_errors($validation);

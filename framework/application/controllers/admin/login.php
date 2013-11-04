@@ -17,6 +17,7 @@ class Admin_Login_Controller extends Base_Controller {
     }
 
     public function post_index() {
+        Administrador::find_by_name(trim(Input::get('txtNombreUsuario')));
         $us = Administrador::where('nombre', '=', trim(Input::get('txtNombreUsuario')))->first();
         if ($us && $us->password == Input::get('txtPassword') && $us->activo) {
             Auth::login($us);

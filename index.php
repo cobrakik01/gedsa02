@@ -21,7 +21,7 @@ $web = true;
 // --------------------------------------------------------------
 // Set the core Laravel path constants.
 // --------------------------------------------------------------
-require 'laravel_framework/paths.php';
+require 'framework/paths.php';
 
 // --------------------------------------------------------------
 // Unset the temporary web variable.
@@ -32,4 +32,3 @@ unset($web);
 // Launch Laravel.
 // --------------------------------------------------------------
 require path('sys').'laravel.php';
-// prueba de edicion
