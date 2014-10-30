@@ -1,0 +1,2 @@
+Plugin para importar albumes de fotografias de Facebook a Wordpress
+http://www.justin-klein.com/projects/facebook-photo-fetcher/#demo
